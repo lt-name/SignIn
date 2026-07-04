@@ -2,7 +2,6 @@ package org.badfish.signin.panel;
 
 import cn.nukkit.Player;
 
-import cn.nukkit.entity.Entity;
 import cn.nukkit.inventory.Inventory;
 import cn.nukkit.inventory.InventoryHolder;
 import cn.nukkit.inventory.InventoryType;
@@ -98,7 +97,6 @@ public class DisplayPanel implements InventoryHolder {
         } else {
             ChestInventoryPanel panel = new ChestInventoryPanel(this, name);
             panel.setContents(itemMap);
-            panel.id = Entity.entityCount++;
             player.addWindow(panel);
         }
     }
